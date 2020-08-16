@@ -44,14 +44,11 @@ let obj2 = {
     age: 25
 };
 
-/*
- Since the object is not a member of an array and no array is used inside that object so there is no need to use loop here. so we can 
-simply access all the properties of this object like : 
-console.log(obj2.name);
-console.log(obj2.degree);
-console.log(obj2.age);
-
-*/
+                 
+  for (const prop in obj2) {
+  console.log(prop + " : "+ obj2[prop]);
+                        }
+                        
 
 // LEVEL # INTERMEDIATE 
 
