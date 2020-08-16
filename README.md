@@ -405,7 +405,8 @@ videos.forEach((video) => {
     console.log(`Length : ${video.lengthInMinutes} `);
     console.log(`Category : ${video.category} `);
     console.log(`Views : ${video.viewCount} `);
-    console.log(`Uploaded On : ${video.uploadDate} `);
+    console.log(`Uploaded On : ${video.uploadDate.getDate()}-${new Intl.DateTimeFormat('en-US', {month: "short"}).format(video.uploadDate)}-${video.uploadDate.getFullYear()} `);
+
     console.log(`Rating : ${video.rating} `);
 
 });
